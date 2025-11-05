@@ -5,13 +5,17 @@
     Pergunte ao professor quantas notas o aluno obteve. Na sequência, usando for, peça para o professor informar todas as notas do aluno.
     Calcule a média das notas e apresente o resultado na tela.
     */
-
     //ENTRADA
-    
-
+    let quant = Number(prompt(`Informe quantas notas o aluno teve`));
+    let qual = 0;
+    let notaTotal = 0;
     //PROCESSAMENTO
-    
-
+    for (let x = 0; x <= quant; x++) {
+       let nota = Number(prompt(`Informe a nota ${qual}`));
+        notaTotal = notaTotal + nota;
+        qual++;
+}
+    let media = notaTotal / quant;
     //SAÍDA
-
+    document.write(`A média das notas é ${media}`);
 </script>
