@@ -5,11 +5,13 @@
     */
 
     //ENTRADA
-
-
+    let multiplos = [];
     //PROCESSAMENTO
-
-
+    for(let num = 1; num <= 100; num++){
+        if(num % 3 == 0){
+            multiplos.push(num)
+        }
+    }
     //SAÍDA
-
+    document.write(`Os números multiplos de 3 são: ${multiplos}`);
 </script>

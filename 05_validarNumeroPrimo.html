@@ -6,11 +6,21 @@
     */
 
     //ENTRADA
-
-
+    let num = Number(prompt(`Informe um número`));
+    let dividivel = 0;
     //PROCESSAMENTO
 
+    for (let i = 1; i <= num; i++) {
+        if (num % i == 0) {
+            dividivel++;
+        }
+    }
 
-    //SAÍDA
+    // SAÍDA
 
+    if (dividivel == 2) {
+        document.write(`O número ${num} é primo`);
+    } else {
+        document.write(`O número ${num} não é primo`);
+    }
 </script>

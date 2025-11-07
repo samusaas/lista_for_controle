@@ -8,11 +8,25 @@
     */
 
     //ENTRADA
-
-    
+    let numIni = Number(prompt(`Informe o número inicial`));
+    let numFin = Number(prompt(`Informe o número final`));
+    let pares = [];
+    let impares = [];
     //PROCESSAMENTO
-
-    
+    if(numIni < numFin){
+        for(numIni; numIni <= numFin; numIni++){
+            if(numIni % 2 == 0){
+                pares.push(numIni);
+            }
+            else{
+                impares.push(numIni);
+            }
+        }
+    } else{
+     alert(`O número inicial deve ser menor que o número final`);   
+    }
     //SAÍDA
 
+    document.write(`Os números pares são: ${pares.join(`, `)}<br>`);
+    document.write(`OS números impares são: ${impares.join(`, `)}`);
 </script>

@@ -7,15 +7,15 @@
     */
 
     //ENTRADA
-    let num1 = Number(prompt(`Informe o primeiro número:`));
-    let num2 = Number(prompt(`Informe o segundo número:`));
-    let num3 = Number(prompt(`Informe o terceiro número:`));
-    let num4 = Number(prompt(`Informe o quarto número:`));
-    let num5 = Number(prompt(`Informe o quinto número:`));
-    let nums = [num1, num2, num3, num4, num5];
+        let maior = Number(prompt(`Informe o número 1:`));
     //PROCESSAMENTO
+     for (let i = 2; i <= 5; i++) {
+        let numero = Number(prompt(`Informe o número ${i}:`));
 
-    
+        if (numero > maior) {
+            maior = numero;
+        }
+    }
     //SAÍDA
-
+    document.write(`O maior número é: ${maior}`);
 </script>
